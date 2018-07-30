@@ -26,8 +26,8 @@ The way it works can be best described by the following diagram:
 It starts with a _base url_ and then attempts to find all the other possible urls, __following redirects__ if needed. Actually it performs exactly like a normal browser following redirects but it's way faster. In this way it is possible to discover other domains or in some special cases even subdomains. In the process it also extracts some basic info (_the title if provided_) for each page. The domains may not be related with each other.
 
 > __Warning:__ It doesn't check, at least in the currect version, if the urls discovered are safe and It's exclusively the end user's responsibility:
-*   to use this tool/software
-*   how to handle the information this software/tool provides.
+>*   to use this tool/software
+>*   how to handle the information this software/tool provides.
 
 ### <u>Example</u>
 
