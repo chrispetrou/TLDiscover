@@ -1,4 +1,4 @@
-#!/usr/bin/env python -B
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
 __description__ = 'TLDiscover: A top-level-domain fuzzer!'

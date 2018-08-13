@@ -1,0 +1,8 @@
+folium
+bs4
+requests[security]
+colorama
+validators
+fake_useragent
+argparse
+html5lib

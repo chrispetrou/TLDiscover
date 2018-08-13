@@ -2,22 +2,7 @@
 
 **TLDiscover** is a __multi-threaded__ _top-level-domain fuzzer._ 
 
-```bash
-$ ./tldiscover.py -h
-usage: tldiscover.py [-h] -u  [-t] [-v] [-a] [-l] [-m] [--timeout]
-
-TLDdiscover Top level domain discovery.
-
-arguments:
-  -h, --help       show this help message and exit
-  -u , --url       Specify a domain to start with.
-  -t , --threads   Specify number of threads to use [default: None]
-  -v, --verbose    Enable verbosity [default False]
-  -a, --useragent  User a random user-agent [default False]
-  -l, --log        Save the results in a log file [Default: False]
-  -m, --map        Create a map [Default: False]
-  --timeout        Specify HTTP connection timeout [default 10 sec]
-  ```
+<center><img src="images/menu.png" width="80%"></center>
 
 The way it works can be best described by the following diagram:
 
@@ -39,6 +24,10 @@ When `--map/-m` option is specified then a map is also created with every domain
 
 ### TODO
 - [ ] Check how safe a discovered website might be (_using probably google safe browsing update API_) or at least estimate if it is considered legit.
+
+**Note:** To install the requirements:
+
+`pip install -r requirements.txt --upgrade --user`
 
 ### Disclaimer
 >This tool is only for testing and academic purposes and can only be used where strict consent has been given. Do not use it for illegal purposes! It is the end user’s responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this tool and software in general.
