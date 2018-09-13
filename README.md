@@ -2,13 +2,9 @@
 
 **TLDiscover** is a __multi-threaded__ _top-level-domain fuzzer._ 
 
-<center><img src="images/menu.png" width="80%"></center>
+<center><img src="images/menu.png" width="70%"></center>
 
-The way it works can be best described by the following diagram:
-
-<center><img src="images/new.png" width="80%"></center>
-
-It starts with a _base url_ and then attempts to find all the other possible urls, __following redirects__ if needed. Actually it performs exactly like a normal browser following redirects but it's way faster. In this way it is possible to discover other domains or in some special cases even subdomains. In the process it also extracts some basic info (_the title if provided_) for each page. The domains may not be related with each other.
+The way it works is simple. It starts with a _base url_ and then attempts to find all the other possible urls by fuzzing the _top-level-domain_, __following redirects__ if needed. Actually it performs exactly like a normal browser following redirects but it's way faster. In this way it is possible to discover other domains or in some special cases even subdomains. In the process it also extracts some basic info (_the title if provided and attempts geolocation if possible_) for each page. The domains found may not be related with each other.
 
 > __Warning:__ It doesn't check, at least in the currect version, if the urls discovered are safe and It's exclusively the end user's responsibility:
 >*   to use this tool/software
@@ -16,7 +12,7 @@ It starts with a _base url_ and then attempts to find all the other possible url
 
 ### <u>Example</u>
 
-<center><img src="images/image.png" width="80%"></center>
+<center><img src="images/image.png" width="90%"></center>
 
 When `--map/-m` option is specified then a map is also created with every domains that is able to be resolved, as shown below:
 
