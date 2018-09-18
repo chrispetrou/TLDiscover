@@ -4,7 +4,7 @@
 
 <center><img src="images/menu.png" width="70%"></center>
 
-The way it works is simple. It starts with a _base url_ and then attempts to find all the other possible urls by fuzzing the _top-level-domain_, __following redirects__ if needed. Actually it performs exactly like a normal browser following redirects but it's way faster. In this way it is possible to discover other domains or in some special cases even subdomains. In the process it also extracts some basic info (_the title if provided and attempts geolocation if possible_) for each page. The domains found may not be related with each other.
+The way it works is simple. It starts with a _base url_ and then attempts to find all the other possible domains by fuzzing the _top-level-domain_, __following redirects__ if needed. Actually it performs exactly like a normal browser following redirects but it's way faster. In this way it is possible to discover other domains or in some special cases even subdomains. In the process it also extracts some basic info (_the title if provided and attempts geolocation & mapping if possible_) for each page. The domains found may or may not be related with each other.
 
 > __Warning:__ It doesn't check, at least in the currect version, if the urls discovered are safe and It's exclusively the end user's responsibility:
 >*   to use this tool/software
