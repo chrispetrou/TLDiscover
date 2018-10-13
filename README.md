@@ -2,7 +2,7 @@
 
 **TLDiscover** is a __multi-threaded__ _top-level-domain fuzzer._ 
 
-<center><img src="images/3.png" width="70%"></center>
+<center><img src="images/menu.png" width="70%"></center>
 
 The way it works is simple. It starts with a _base url_ and then attempts to find all the other possible domains by fuzzing the _top-level-domain_, __following redirects__ if needed. Actually it performs exactly like a normal browser following redirects but it's way faster. In this way it is possible to discover other domains or in some special cases even subdomains. In the process it also extracts some basic info (_the title if provided and attempts geolocation & mapping if possible_) for each page. The domains found may or may not be related with each other.
 
