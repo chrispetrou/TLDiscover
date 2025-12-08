@@ -6,3 +6,4 @@ validators
 fake_useragent
 argparse
 html5lib
+urllib3>=2.6.0 # not directly required, pinned by Snyk to avoid a vulnerability
